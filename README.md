@@ -14,9 +14,21 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 // iterate on board state variable to display square component for each element.
 // use styling to set up grid 
 
-- As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+-Will need to pass index as props to Square
+-To gain access to the index being clicked, we need to pass index into a function on App.js from Square
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+-Branch: tree-emoji
+-Create copy of state array
+-Index allows us to use bracket notation to update the element that was clicked to a tree emoji, remember emojis are strings, to access emojis $ cmd + ctrl + space
+-Update state using setBoard method with the modified copied array
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
+-branch winner-loser
+-randomize winning box index and store in a state variable
+-randomize losing box index and store in a state variable
+-create some conditional logic to check if the selected box is the winning or losing box when clicking the box
+
+
+
 - As a user, I can click on a “Play Again” button that will restart the game.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
