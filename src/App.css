@@ -10,7 +10,7 @@ h1 {
   text-align: center;
 }
 
-.gameboard {
+.gameBoard {
   display: flex; 
   flex-wrap: wrap;
   width: 620px;

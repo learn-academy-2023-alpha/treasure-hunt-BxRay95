@@ -35,10 +35,23 @@ const App = () => {
         setBoard(updatedBoard)
   }
 
+  const resetGame = () => {
+    setBoard([
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"])
+  }
+
   return (
     <>
       <h1>Treasure Hunt Game</h1>
-      <div className="gameboard">
+      <div className="gameBoard">
         {board.map((value, index) => {
           return (
             <Square 
@@ -50,8 +63,11 @@ const App = () => {
           )
         })}
       </div>
+      <div>
+      <button onClick={() => resetGame}>Reset Game</button>
+      </div>
     </>
   )
 }
 
-export default App
+export default App;
